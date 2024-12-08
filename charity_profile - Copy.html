@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 
+	<link rel="stylesheet" href="styles1.css">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Ensure the correct path to styles.css -->
-    <link href="styles1.css" rel="stylesheet">
-
-    <title>HelpHub - Homepage</title>
+    <title>HelpHub - Charity Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,7 +36,7 @@
             padding: 1em;
         }
 
-        section {
+        .profile {
             max-width: 800px;
             width: 100%;
             padding: 1em;
@@ -57,24 +55,26 @@
             line-height: 1.5;
         }
 
-        @media (min-width: 600px) {
-            main {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-            
-            section {
-                width: calc(33% - 1em);
-                margin: 0.5em;
-            }
+        button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin-top: 1em;
+            font-size: 1rem;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>HelpHub</h1>
-        <p>Welcome to HelpHub</p>
         <nav>
             <a href="index.html">Homepage</a>
             <a href="charities.html">Charity List</a>
@@ -83,24 +83,13 @@
     </header>
     
     <main>
-        <section>
-            <h2>Description of HelpHub</h2>
-            <p>HelpHub is an organization dedicated to...</p>
-        </section>
-        <section>
-            <h2>What HelpHub Plans to Do</h2>
-            <p>Our goals include...</p>
-        </section>
-        <section>
-            <h2>What You Can Do to Help</h2>
-            <p>There are many ways you can contribute...</p>
+        <section class="profile">
+            <h2>Charity Name</h2>
+            <p>Description of the charity...</p>
+            <h3>Goal of the Charity</h3>
+            <p>Details about the charity's goals...</p>
+            <button>Volunteer Now</button>
         </section>
     </main>
-	<h1>Current Weather</h1>
- 	 <div id="weather">
-   	 <p>Loading weather data...</p>
-  	</div>
- 	 <script src="weather.js"></script>
 </body>
 </html>
-

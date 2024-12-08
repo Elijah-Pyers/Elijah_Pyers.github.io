@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 
+	<link rel="stylesheet" href="styles1.css">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Ensure the correct path to styles.css -->
-    <link href="styles1.css" rel="stylesheet">
-
-    <title>HelpHub - Homepage</title>
+    <title>HelpHub - Charities List</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,13 +36,14 @@
             padding: 1em;
         }
 
-        section {
+        .charity {
             max-width: 800px;
             width: 100%;
             padding: 1em;
             background-color: #e9e9e9;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         h1, h2 {
@@ -64,7 +63,7 @@
                 justify-content: space-around;
             }
             
-            section {
+            .charity {
                 width: calc(33% - 1em);
                 margin: 0.5em;
             }
@@ -74,7 +73,6 @@
 <body>
     <header>
         <h1>HelpHub</h1>
-        <p>Welcome to HelpHub</p>
         <nav>
             <a href="index.html">Homepage</a>
             <a href="charities.html">Charity List</a>
@@ -83,17 +81,17 @@
     </header>
     
     <main>
-        <section>
-            <h2>Description of HelpHub</h2>
-            <p>HelpHub is an organization dedicated to...</p>
+        <section class="charity">
+            <h3>Charity #1</h3>
+            <p>Brief description of Charity #1...</p>
         </section>
-        <section>
-            <h2>What HelpHub Plans to Do</h2>
-            <p>Our goals include...</p>
+        <section class="charity">
+            <h3>Charity #2</h3>
+            <p>Brief description of Charity #2...</p>
         </section>
-        <section>
-            <h2>What You Can Do to Help</h2>
-            <p>There are many ways you can contribute...</p>
+        <section class="charity">
+            <h3>Charity #3</h3>
+            <p>Brief description of Charity #3...</p>
         </section>
     </main>
 	<h1>Current Weather</h1>
@@ -103,4 +101,3 @@
  	 <script src="weather.js"></script>
 </body>
 </html>
-
